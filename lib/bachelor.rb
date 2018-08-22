@@ -2,7 +2,7 @@ def get_first_name_of_season_winner(data, season)
   # code here
   data.each do |tv_season, contestants|
     if tv_season == season
-      contestants.each do |peerson|
+      contestants.each do |person|
         puts person["name"] if person[:"status"] == "Winner"
       end
     end
