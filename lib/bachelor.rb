@@ -2,7 +2,7 @@ def get_first_name_of_season_winner(data, season)
   # code here
   data.each do |tv_season, contestants|
     if tv_season == season
-      tv_season.each do |item, info|
+      contestants.each do |item, info|
         puts tv_season["name"] if item["status"] == "Winner"
       end
     end
