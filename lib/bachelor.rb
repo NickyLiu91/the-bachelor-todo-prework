@@ -2,7 +2,7 @@ def get_first_name_of_season_winner(data, season)
   # code here
   data.each do |tv_season, array|
     data[season.to_sym].each do |array|
-        return person[:name] if person[:status] == "Winner"
+        puts person[:name] if person[:status] == "Winner"
     end
   end
 end
